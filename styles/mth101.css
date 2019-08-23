@@ -1,0 +1,150 @@
+.mth101 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    background-image: url('../assets/icons/Group\ 23.png');
+    background-repeat: repeat-x;
+    border: none;
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    overflow-y: scroll;
+}
+
+span.topper {
+    position: fixed;
+    width: 100%;
+    height: 6%;
+    background-color: rgb(28, 78, 216);
+    z-index: 1;
+}
+
+.studentName {
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 45%;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 1%;
+    z-index: 1;
+}
+
+.title {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    position: fixed;
+    left: 0;
+    top: 1%;
+    z-index: 1;
+}
+
+.studentMatricNo {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    position: fixed;
+    right: 10%;
+    top: 1%;
+    z-index: 1;
+}
+
+.studentPicture {
+    position: fixed;
+    top: 0;
+    right: 1%;
+    background-color: white;
+    height: 6%;
+    width: 3%;
+    border-radius: 40px;
+    background-size: cover;
+    background-repeat: none;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.examClock {
+    color: white;
+    position: fixed;
+    left: 20%;
+    top: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.mthSubmit {
+    width: 20%;
+    height: 6%;
+    background-color: rebeccapurple;
+    border: none;
+    left: 40%;
+    top: 1690%;
+    position: absolute;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.resultModal {
+    width: 80%;
+    background-color: rgb(71, 116, 238);
+    height: 40%;
+    position: fixed;
+    left: 10%;
+    z-index: 2;
+    top: 30%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resultModal>span {
+    font-size: 20px;
+    position: absolute;
+    transition: .5s;
+}
+
+.resultModal>span.courseTitle {
+    font-size: 40px;
+    top: 3%;
+    left: 25%;
+}
+
+.resultModal>span.examScore {
+    left: 2%;
+    top: 30%;
+}
+
+.resultModal>span.semesterPoints {
+    top: 50%;
+    left: 2%;
+}
+
+.resultModal>span.wiseContent {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(14, 231, 184);
+    top: 68%;
+}
+
+.resultModal>span.courseUnit {
+    top: 30%;
+    right: 2%;
+}
+
+.resultModal>span.gradePoint {
+    right: 2%;
+    top: 50%;
+}
+
+.resultModal>span.retakeExam {
+    bottom: 2%;
+    left: 2%;
+    color: yellow;
+}
+
+.resultModal>span.goToCourses {
+    bottom: 2%;
+    right: 2%;
+    color: yellow;
+}

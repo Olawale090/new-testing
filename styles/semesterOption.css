@@ -1,0 +1,65 @@
+.semester {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    background-image: url('../assets/icons/Group\ 23.png');
+    background-repeat: repeat-x;
+    border-top: solid rgb(28, 78, 216) 40px;
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    transition-delay: 2s;
+}
+
+.blueBtn {
+    position: absolute;
+    top: 40%;
+    background-color: rgb(28, 78, 216);
+    border: none;
+    height: 6%;
+    color: white;
+    width: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.firstOne {
+    left: 30%;
+}
+
+.secondOne {
+    left: 60%;
+}
+
+#nameDisplay {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    left: 40%;
+    top: -5%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#matricDisplay {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    right: 0;
+    top: -5%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#textContent {
+    position: absolute;
+    width: 30%;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    top: 50%;
+    left: 35%;
+    text-align: center;
+}

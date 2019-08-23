@@ -1,0 +1,218 @@
+section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../assets/icons/Group\ 26.png);
+    background-repeat: repeat-x;
+    background-color: rgb(241, 239, 239);
+    box-sizing: border-box;
+    border-top: solid rgb(28, 78, 216) 50px;
+    display: none;
+    transition: 1.5s;
+}
+
+#profileTitle {
+    position: absolute;
+    top: -6%;
+    width: 20%;
+    color: white;
+    height: 10%;
+    left: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(7, 9%);
+    grid-row-gap: 15px;
+    align-content: center;
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    background-color: none;
+}
+
+form[id*="login"]>input {
+    border-radius: 2px;
+    border: solid gray 1px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+form[id*="login"]>input::placeholder {
+    color: rgb(63, 63, 63);
+    font-size: 15px;
+}
+
+input[type="file"] {
+    opacity: 0;
+    background-color: red;
+    height: 20%;
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    top: 1%;
+}
+
+input[type="file"]:hover {
+    cursor: pointer;
+}
+
+#img {
+    background-color: rgb(10, 45, 110);
+    height: 20%;
+    width: 9%;
+    position: absolute;
+    left: 45%;
+    top: 1%;
+    border-radius: 100%;
+}
+
+#img:hover {
+    cursor: pointer;
+}
+
+#img::after {
+    content: 'Select photo';
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submitBtn {
+    background-color: rgb(28, 78, 216);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+ul.messages {
+    height: 42%;
+    width: 10%;
+    position: absolute;
+    background-color: none;
+    right: 22%;
+    top: 25%;
+    list-style: none;
+}
+
+ul.messages>li {
+    height: 10%;
+    width: 15%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    opacity: 0;
+    transition: 1s;
+}
+
+ul.messages>li:nth-child(1) {
+    top: 2.5%;
+    right: 75%;
+    background-image: url(../assets/icons/039-checked.png);
+}
+
+ul.messages>li:nth-child(2) {
+    top: 25%;
+    right: 75%;
+    background-image: url(../assets/icons/039-checked.png);
+}
+
+ul.messages>li:nth-child(3) {
+    top: 48%;
+    right: 75%;
+    background-image: url(../assets/icons/039-checked.png);
+}
+
+ul.messages>li:nth-child(4) {
+    top: 72%;
+    right: 75%;
+    background-image: url(../assets/icons/039-checked.png);
+}
+
+ul.messages>li:nth-child(5) {
+    top: 96%;
+    right: 75%;
+    background-image: url(../assets/icons/039-checked.png);
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 1px 10px 2px gray;
+    position: absolute;
+    bottom: 0;
+}
+
+footer>li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: rgb(20, 201, 101);
+    text-align: center;
+}
+
+#YOP {
+    height: 50%;
+    width: 10%;
+    border: solid gray 1px;
+    position: absolute;
+    color: gray;
+    left: 45%;
+    bottom: 15%;
+    border-radius: 30px;
+}
+
+img[alt="icon"] {
+    width: 3.5%;
+    height: 8%;
+    position: absolute;
+    top: -8%;
+}
+
+.uploadLb {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 46.55%;
+    top: 10%;
+}
+
+label.cover {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: -1.5%;
+    top: 24%;
+}
+
+#signin {
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    top: -8%;
+    right: 0;
+    border: none;
+    background-color: rgb(28, 78, 218);
+    color: white;
+    font-size: 15px;
+    transition: .5s;
+}
+
+#signin:hover {
+    color: rgb(243, 239, 8);
+    cursor: pointer;
+}

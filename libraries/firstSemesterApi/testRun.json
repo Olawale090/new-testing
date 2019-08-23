@@ -1,0 +1,13 @@
+[{
+        "question": "what is a noun",
+        "options": [" a noun is a name", "an action word", "qualifies a noun", "qualifies a verb", "connects two noun words"]
+    },
+    {
+        "question": "what is a verb",
+        "options": [" a noun is a name", "an action word is a ver", "qualifies a noun", "qualifies a verb", "connects two noun words"]
+    },
+    {
+        "question": "what is an adjective",
+        "options": [" a noun is a name", "an action word", "qualifies a noun is an adjective", "qualifies a verb", "connects two noun words"]
+    }
+]

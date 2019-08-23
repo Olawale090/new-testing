@@ -1,0 +1,361 @@
+section.courses1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    background-image: url('../assets/icons/Group\ 23.png');
+    background-repeat: repeat-x;
+    border-top: solid rgb(28, 78, 216) 40px;
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    top: 40%;
+}
+
+#menuBtn:hover {
+    cursor: pointer;
+}
+
+span[id*="courses1"] {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    display: grid;
+    list-style: none;
+    background-color: none;
+    grid-template-rows: repeat(2, 35%);
+    grid-template-columns: repeat(4, 20%);
+    grid-row-gap: 15%;
+    grid-column-gap: 5%;
+    justify-content: center;
+}
+
+span[id*="courses1"]>li {
+    transition: .5s;
+}
+
+span[id*="courses1"]>li:hover {
+    box-shadow: 0 0 7px 2px rgba(89, 89, 241, 0.836);
+    cursor: pointer;
+}
+
+span[id*="courses1"]>li:nth-child(1) {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-image: linear-gradient(to right, rgb(255, 0, 170), orangered);
+}
+
+span[id*="courses1"]>li:nth-child(2) {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    background-image: -moz-linear-gradient(to right, rgb(1, 223, 156), rgb(18, 204, 11));
+}
+
+span[id*="courses1"]>li:nth-child(3) {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    background-image: url(../assets/icons/blackboard-1.png), -moz-linear-gradient(to right, rgb(0, 102, 255), rgb(11, 73, 165));
+    /* background-image: url(../assets/icons/blackboard-1.png); */
+    object-fit: cover;
+    background-size: cover;
+}
+
+span[id*="courses1"]>li:nth-child(4) {
+    grid-column: 4/4;
+    grid-row: 1/1;
+    background-image: url(../assets/icons/009-chemistry.png), -moz-linear-gradient(to right, rgb(209, 148, 16), rgb(238, 204, 10));
+    background-size: cover;
+    object-fit: cover;
+}
+
+span[id*="courses1"]>li:nth-child(5) {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: rgb(11, 32, 99);
+    background-image: url(../assets/icons/009-chemistry.png), -moz-linear-gradient(to right, rgb(11, 32, 99), rgb(15, 51, 168));
+    background-size: cover;
+    object-fit: cover;
+}
+
+span[id*="courses1"]>li:nth-child(6) {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: rgb(245, 103, 9);
+    background-image: url(../assets/icons/021-microscope.png), -moz-linear-gradient(to right, rgb(245, 103, 9), rgb(190, 159, 22));
+    background-size: cover;
+    object-fit: cover;
+}
+
+span[id*="courses1"]>li:nth-child(7) {
+    grid-column: 3/3;
+    grid-row: 2/2;
+    background-image: -moz-linear-gradient(rgb(224, 13, 231), rgb(238, 12, 144));
+}
+
+span[id*="courses1"]>li.eighth1:nth-child(8) {
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: rgb(245, 103, 9);
+    background-image: url(../assets/icons/005-books.png), -moz-linear-gradient(to right, rgb(70, 236, 111), rgb(130, 235, 45));
+    background-size: cover;
+    object-fit: cover;
+}
+
+span[id*="courses1"]>li.first1:after {
+    content: "Mathematics (MTH101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 2.54%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.second1:after {
+    content: "General studies (GNS101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 27.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.third1:after {
+    content: "Physics (PHY101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 52.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.fourth1:after {
+    content: "Chemistry (CHM101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 77.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.fifth1:after {
+    content: "CHM practical (CHM191)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 2.54%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.sixth1:after {
+    content: "Biology (BIO101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 27.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.seventh1:after {
+    content: "Fine Applied Art (FAA101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 52.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+span[id*="courses1"]>li.eighth1:after {
+    content: "Library (LIB101)";
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(136, 136, 136);
+    height: 10%;
+    width: 20%;
+    text-align: center;
+    position: absolute;
+    top: 85%;
+    left: 77.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+#anchor {
+    width: 2%;
+    height: 3%;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 0;
+    left: 1.6%;
+    transform: rotate(45deg);
+    display: none;
+}
+
+#menu {
+    width: 22%;
+    height: 50%;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    padding-left: 0;
+    display: none;
+    z-index: 4;
+}
+
+#menu>li {
+    background-color: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    height: 12.8%;
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 37px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-left: 0;
+    list-style: none;
+    transition: .5s;
+}
+
+#menu>li:hover {
+    background-color: rgb(28, 78, 216);
+    color: white;
+    cursor: pointer;
+}
+
+header.picture {
+    top: -7%;
+    right: 2%;
+    height: 6%;
+    width: 3%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.holder {
+    color: white;
+    position: absolute;
+    top: -5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.fullname {
+    left: 10%;
+}
+
+.matricNo {
+    right: 10%;
+}
+
+header.courses {
+    left: 46%;
+}
+
+.hideMenuBtn {
+    position: absolute;
+    top: -7%;
+    left: 1%;
+    width: 3%;
+    height: 6%;
+    background-color: yellow;
+    opacity: 0;
+    display: none;
+}
+
+.hideMenuBtn:hover {
+    cursor: pointer;
+}
+
+
+/* menu winddows */
+
+.examResult {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 2px 2px 20px 5px rgb(144, 145, 144);
+    display: none;
+}
+
+.examResult>.text {
+    color: gray;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.examResult>.result-topper {
+    position: absolute;
+    background-color: rgb(28, 78, 216);
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.result-topper>svg.resultcloseBtn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.result-topper>svg.resultMaximiseBtn:hover {
+    background-color: rgb(9, 44, 141);
+    cursor: pointer;
+}

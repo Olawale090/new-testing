@@ -1,0 +1,19 @@
+{
+    "name": "fresherspicnic",
+    "version": "1.0.0",
+    "description": "CBT (Computer Base Test ) application for freshers in Universities.",
+    "main": "mainApp.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "mainApp.html"
+    },
+    "keywords": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology"
+    ],
+    "author": "mIo",
+    "license": "ISC",
+    "dependencies": {}
+}
