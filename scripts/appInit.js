@@ -11,7 +11,8 @@ var loader = () => {
             svgPicker.style.opacity = 0;
             svgPicker.style.display = 'none';
             loading.style.opacity = 0;
-            appinit.style.display = "block";
+            appinit.style.display = 'block';
+
         }, 5000);
     } catch (err) {
         console.log(err);

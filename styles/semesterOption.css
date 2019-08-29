@@ -63,3 +63,22 @@
     left: 35%;
     text-align: center;
 }
+
+button.arrowback {
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    height: 7%;
+    width: 3.5%;
+    border: none;
+    background-image: url(../assets/icons/078-previous.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+button.arrowback:hover {
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}

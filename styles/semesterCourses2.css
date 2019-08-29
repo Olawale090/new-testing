@@ -42,19 +42,19 @@ span[id*="courses"]>li:hover {
 span[id*="courses"]>li:nth-child(1) {
     grid-column: 1/1;
     grid-row: 1/1;
-    background-image: -moz-linear-gradient(to right, rgb(255, 0, 170), orangered)
+    background-image: linear-gradient(to right, rgb(255, 0, 170), orangered)
 }
 
 span[id*="courses"]>li:nth-child(2) {
     grid-column: 2/2;
     grid-row: 1/1;
-    background-image: -moz-linear-gradient(to right, rgb(1, 223, 156), rgb(18, 204, 11));
+    background-image: linear-gradient(to right, rgb(1, 223, 156), rgb(18, 204, 11));
 }
 
 span[id*="courses"]>li:nth-child(3) {
     grid-column: 3/3;
     grid-row: 1/1;
-    background-image: url(../assets/icons/blackboard-1.png), -moz-linear-gradient(to right, rgb(0, 102, 255), rgb(11, 73, 165));
+    background-image: url(../assets/icons/blackboard-1.png), linear-gradient(to right, rgb(0, 102, 255), rgb(11, 73, 165));
     /* background-image: url(../assets/icons/blackboard-1.png); */
     object-fit: cover;
     background-size: cover;
@@ -63,7 +63,7 @@ span[id*="courses"]>li:nth-child(3) {
 span[id*="courses"]>li:nth-child(4) {
     grid-column: 4/4;
     grid-row: 1/1;
-    background-image: url(../assets/icons/009-chemistry.png), -moz-linear-gradient(to right, rgb(209, 148, 16), rgb(238, 204, 10));
+    background-image: url(../assets/icons/009-chemistry.png), linear-gradient(to right, rgb(209, 148, 16), rgb(238, 204, 10));
     background-size: cover;
     object-fit: cover;
 }
@@ -72,7 +72,7 @@ span[id*="courses"]>li:nth-child(5) {
     grid-column: 1/1;
     grid-row: 2/2;
     background-color: rgb(11, 32, 99);
-    background-image: url(../assets/icons/009-chemistry.png), -moz-linear-gradient(to right, rgb(11, 32, 99), rgb(15, 51, 168));
+    background-image: url(../assets/icons/009-chemistry.png), linear-gradient(to right, rgb(11, 32, 99), rgb(15, 51, 168));
     background-size: cover;
     object-fit: cover;
 }
@@ -81,7 +81,7 @@ span[id*="courses"]>li:nth-child(6) {
     grid-column: 2/2;
     grid-row: 2/2;
     background-color: rgb(245, 103, 9);
-    background-image: url(../assets/icons/021-microscope.png), -moz-linear-gradient(to right, rgb(245, 103, 9), rgb(190, 159, 22));
+    background-image: url(../assets/icons/021-microscope.png), linear-gradient(to right, rgb(245, 103, 9), rgb(190, 159, 22));
     background-size: cover;
     object-fit: cover;
 }
@@ -89,7 +89,7 @@ span[id*="courses"]>li:nth-child(6) {
 span[id*="courses2"]>li:nth-child(7) {
     grid-column: 3/3;
     grid-row: 2/2;
-    background-image: url(../assets/icons/earth-globe.png), -moz-linear-gradient(rgb(224, 13, 231), rgb(238, 12, 144));
+    background-image: url(../assets/icons/earth-globe.png), linear-gradient(rgb(224, 13, 231), rgb(238, 12, 144));
     background-size: cover;
     object-fit: cover;
 }
@@ -98,7 +98,7 @@ span[id*="courses"]>li:nth-child(8) {
     grid-column: 4/4;
     grid-row: 2/2;
     background-color: rgb(245, 103, 9);
-    background-image: url(../assets/icons/003-cpu.png), -moz-linear-gradient(to right, rgb(70, 236, 111), rgb(130, 235, 45));
+    background-image: url(../assets/icons/003-cpu.png), linear-gradient(to right, rgb(70, 236, 111), rgb(130, 235, 45));
     background-size: cover;
     object-fit: cover;
 }
