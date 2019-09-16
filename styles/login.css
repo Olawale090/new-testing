@@ -216,3 +216,26 @@ label.cover {
     color: rgb(243, 239, 8);
     cursor: pointer;
 }
+
+button.fromlogin {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    height: 7%;
+    width: 3.5%;
+    border: none;
+    background-image: url(../assets/icons/078-previous.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    transition: 0.7s;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+button.fromlogin:hover {
+    background-color: rgb(231, 217, 23);
+    cursor: pointer;
+    width: 3.7%;
+    /* border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}

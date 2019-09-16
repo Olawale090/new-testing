@@ -15,61 +15,61 @@ export class userDatabase {
     public_class_userLocalStorage() {
         try {
             if (document.querySelector('#fullname').value === '') {
-                var nameVerify = document.querySelector('li:nth-child(1)');
+                var nameVerify = document.querySelector('ul.messages>li:nth-child(1)');
                 nameVerify.style.backgroundImage = 'url(./assets/icons/049-cancel.png)';
                 nameVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#fullname').value !== '') {
-                var nameVerify = document.querySelector('li:nth-child(1)');
+                var nameVerify = document.querySelector('ul.messages>li:nth-child(1)');
                 nameVerify.style.backgroundImage = 'url(./assets/icons/039-checked.png)';
                 nameVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#matricNo').value === '' || document.querySelector('#matricNo').value === isNaN) {
-                var matricVerify = document.querySelector('li:nth-child(2)');
+                var matricVerify = document.querySelector('ul.messages>li:nth-child(2)');
                 matricVerify.style.backgroundImage = "url(./assets/icons/049-cancel.png)";
                 matricVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#matricNo').value !== '') {
-                var matricVerify = document.querySelector('li:nth-child(2)');
+                var matricVerify = document.querySelector('ul.messages>li:nth-child(2)');
                 matricVerify.style.backgroundImage = "url(./assets/icons/039-checked.png)";
                 matricVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#faculty').value == '') {
-                var facultyVerify = document.querySelector('li:nth-child(3)');
+                var facultyVerify = document.querySelector('ul.messages>li:nth-child(3)');
                 facultyVerify.style.backgroundImage = "url(./assets/icons/049-cancel.png)";
                 facultyVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#faculty').value !== '') {
-                var facultyVerify = document.querySelector('li:nth-child(3)');
+                var facultyVerify = document.querySelector('ul.messages>li:nth-child(3)');
                 facultyVerify.style.backgroundImage = "url(./assets/icons/039-checked.png)";
                 facultyVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#department').value == '') {
-                var departmentVerify = document.querySelector('li:nth-child(4)');
+                var departmentVerify = document.querySelector('ul.messages>li:nth-child(4)');
                 departmentVerify.style.backgroundImage = "url(./assets/icons/049-cancel.png)";
                 departmentVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#department').value !== '') {
-                var departmentVerify = document.querySelector('li:nth-child(4)');
+                var departmentVerify = document.querySelector('ul.messages>li:nth-child(4)');
                 departmentVerify.style.backgroundImage = "url(./assets/icons/039-checked.png)";
                 departmentVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#password').value == '') {
-                var passwordVerify = document.querySelector('li:nth-child(5)');
+                var passwordVerify = document.querySelector('ul.messages>li:nth-child(5)');
                 passwordVerify.style.backgroundImage = "url(./assets/icons/049-cancel.png)";
                 passwordVerify.style.opacity = 1;
             }
 
             if (document.querySelector('#password').value !== '') {
-                var passwordVerify = document.querySelector('li:nth-child(5)');
+                var passwordVerify = document.querySelector('ul.messages>li:nth-child(5)');
                 passwordVerify.style.backgroundImage = "url(./assets/icons/039-checked.png)";
                 passwordVerify.style.opacity = 1;
             }
@@ -127,7 +127,7 @@ export class userDatabase {
     }
 
     public_class_semesterChoice() {
-        let semesterSection = document.querySelector('#chooseSemester');
+        let semesterSection = document.querySelector('section.body');
         let loginSection = document.querySelector('.loginForm');
 
         // student details display areas
@@ -146,7 +146,7 @@ export class userDatabase {
         photoDisplay.style.backgroundImage = 'url(' + localStorage.photoURL + ')';
 
         console.log(localStorage.photoURL);
-        semesterSection.style.transitionDelay = '2s';
+        // semesterSection.style.transitionDelay = '2s';
         semesterSection.style.display = 'block';
         loginSection.style.display = 'none';
 
@@ -159,7 +159,7 @@ export class userDatabase {
 }
 
 var userLocalhost = new userDatabase();
-// window.addEventListener('load', userLocalhost.public_class_studentProfile_database, false);
+// window.addEventListener('load', userLocalhost.public_class_studentProfile_database, false); this line was for testing...
 uploadBtn.addEventListener('change', userLocalhost.public_class_uploadPhoto, false);
 submit.addEventListener('click', () => {
     userLocalhost.public_class_userLocalStorage();

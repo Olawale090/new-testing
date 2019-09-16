@@ -77,13 +77,16 @@ span.topper {
     width: 20%;
     height: 6%;
     background-color: rebeccapurple;
+    border-radius: 5px;
     border: none;
     left: 40%;
-    top: 1690%;
+    top: 1670%;
     position: absolute;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
+    box-sizing: border-box;
+    padding-top: 7px;
 }
 
 .modalcontainer {

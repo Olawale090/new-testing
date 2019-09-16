@@ -11,8 +11,8 @@ class marker {
 
             alert(`total number of correct options is ${optional.length}`);
 
-            for (var i = 0; i <= 49; i++) {
-                if (optional[i] == true) {
+            for (var k = 0; k <= 49; k++) {
+                if (optional[k] == true) {
                     counter++;
                     console.log(counter);
                 } else {

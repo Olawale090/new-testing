@@ -529,8 +529,12 @@ var questions = [{
 
 var mthP = JSON.stringify(questions);
 export var mthPQ = JSON.parse(mthP);
-
-
+const firstSemester = document.querySelector(".firstSemester");
+const sectionMth101 = document.querySelector("section.mth101");
+const retakeExamBtn = document.querySelector(".retakeExam");
+const submitMthBtn = document.querySelector("button.mthSubmit");
+const goToCourses = document.querySelector(".goToCourses");
+const modalContainer = document.querySelector('.modalcontainer'); // for the result display modal container with faded background.
 export class exams {
     constructor() {
 
@@ -542,8 +546,8 @@ export class exams {
         span.setAttribute('class', 'questionsContainer');
         questionBox.appendChild(span);
         var j = 0;
-        for (var i = 0; i <= 49; i++) {
-            let x = Math.ceil(Math.floor(Math.random() * i));
+        for (var i = 0; i < 50; i++) {
+            let x = Math.floor(Math.random() * i);
             try {
                 console.log(mthPQ[i].questions);
                 console.log("A     " + mthPQ[i].options[0]);
@@ -566,7 +570,28 @@ export class exams {
             }
         }
     }
+
+    public_method_retake_examination() {
+        modalContainer.style.display = "none";
+    }
+
+    public_method_gotocourses() {
+        modalContainer.style.display = "none";
+        sectionMth101.style.display = "none";
+        firstSemester.style.display = "block";
+
+    }
+
+    public_method_displaymth101Result() {
+        modalContainer.style.display = "block";
+    }
 }
 
 var examination = new exams();
 window.addEventListener('load', examination.public_method_fetchQuestions, false);
+retakeExamBtn.addEventListener('click', () => {
+    examination.public_method_retake_examination();
+}, false);
+
+submitMthBtn.addEventListener('click', examination.public_method_displaymth101Result, false);
+goToCourses.addEventListener('click', examination.public_method_gotocourses, false);
