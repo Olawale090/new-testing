@@ -9,7 +9,7 @@ class marker {
             var optional = document.querySelectorAll('.mio').checked;
             var counter = 0;
 
-            alert(`total number of correct options is ${optional.length}`);
+            // alert(`total number of correct options is ${optional.length}`);
 
             for (var k = 0; k <= 49; k++) {
                 if (optional[k] == true) {
