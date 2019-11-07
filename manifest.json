@@ -1,0 +1,20 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "iGrade",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://new-testing.netlify.com/",
+    "short_name": "iGrade",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": "",
+    "prefer_related_applications": "false",
+    "icons": [{
+        "src": "https://new-testing.netlify.com/assets/icons/038-edit.png",
+        "sizes": "512x512"
+    }],
+    "generated": "true"
+}
