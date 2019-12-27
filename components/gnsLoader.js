@@ -409,3 +409,17 @@ var gns102 = [{
     }
     //seventh ten and its inputs ends here
 ];
+
+var couseP = JSON.stringify(gns102);
+var cousePQ = JSON.parse(couseP);
+
+import { exams } from '../scripts/questionLoader';
+
+var examination = new exams();
+window.addEventListener('load', examination.public_method_fetchQuestions, false);
+retakeExamBtn.addEventListener('click', () => {
+    examination.public_method_retake_examination();
+}, false);
+
+submitMthBtn.addEventListener('click', examination.public_method_displaymth101Result, false);
+goToCourses.addEventListener('click', examination.public_method_gotocourses, false);

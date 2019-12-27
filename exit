@@ -1,0 +1,46 @@
+[33mcommit ac826623514e5b43fa3828d716ee7e874f46f87d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Olawale090 <olawale21@gmail.com>
+Date:   Thu Nov 7 08:48:02 2019 +0100
+
+    manifest added
+
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 84414be..fe56423 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -22,6 +22,8 @@[m
+     <script async type="module" src="scripts/quicktest.js"></script>[m
+     <script async type="module" src="scripts/profile.js"></script>[m
+ [m
+[32m+[m[32m    <link rel='manifest' href='/manifest.webmanifest'>[m
+[32m+[m
+     <title>iGrade</title>[m
+ [m
+ [m
+[1mdiff --git a/manifest.json b/manifest.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4edbaa2[m
+[1m--- /dev/null[m
+[1m+++ b/manifest.json[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "dir": "ltr",[m
+[32m+[m[32m    "lang": "en",[m
+[32m+[m[32m    "name": "iGrade",[m
+[32m+[m[32m    "scope": "/",[m
+[32m+[m[32m    "display": "browser",[m
+[32m+[m[32m    "start_url": "https://new-testing.netlify.com/",[m
+[32m+[m[32m    "short_name": "iGrade",[m
+[32m+[m[32m    "theme_color": "transparent",[m
+[32m+[m[32m    "description": "",[m
+[32m+[m[32m    "orientation": "any",[m
+[32m+[m[32m    "background_color": "transparent",[m
+[32m+[m[32m    "related_applications": "",[m
+[32m+[m[32m    "prefer_related_applications": "false",[m
+[32m+[m[32m    "icons": [{[m
+[32m+[m[32m        "src": "https://new-testing.netlify.com/assets/icons/038-edit.png",[m
+[32m+[m[32m        "sizes": "512x512"[m
+[32m+[m[32m    }],[m
+[32m+[m[32m    "generated": "true"[m
+[32m+[m[32m}[m
+\ No newline at end of file[m

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="styles/appInit.css">
     <link rel="stylesheet" href="styles/semesterOption.css">
     <link rel="stylesheet" href="styles/login.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="styles/mth101.css">
     <link rel="stylesheet" href="styles/questions.css">
     <link rel="icon" href="assets/icons/038-edit.png">
+
     <script async type="module" src="scripts/appInit.js"></script>
     <script async type="module" src="scripts/userLocalhost.js"></script>
     <script async type="module" src="scripts/courses.js"></script>
@@ -21,8 +23,25 @@
     <script async type="module" src="scripts/marker.js"></script>
     <script async type="module" src="scripts/quicktest.js"></script>
     <script async type="module" src="scripts/profile.js"></script>
+    <script async type="module" src="scripts/pwabuilder-sw.js "></script>
 
-    <link rel='manifest' href='/manifest.webmanifest'>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>iGrade</title>
 
@@ -692,6 +711,29 @@ style="enable-background:new 0 0 512 512;
         <div class="modalcontainer">
             <div class="resultModal">
                 <span class="courseTitle">Mathematics(MTH101) Result</span>
+                <span class="examScore">examscore shows here</span>
+                <span class="semesterPoints">Semester total points shows here</span>
+                <span class="gradePoint">letter of grade grade point gotten is displayed here</span>
+                <span class="courseUnit">course unit is held here</span>
+                <span class="retakeExam">Retake exam</span>
+                <span class="goToCourses">Go to courses</span>
+                <span class="wiseContent"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="faa101">
+        <span class="topper"></span>
+        <header class="course title">Fine Applied Art(FAA101)</header>
+        <header class="studentName">fullname</header>
+        <header class="studentMatricNo">MatricNo</header>
+        <header class="examClock">Clock</header>
+        <header class="studentPicture"></header>
+        <button type="submit" class="mthSubmit">Submit</button>
+
+        <div class="modalcontainer">
+            <div class="resultModal">
+                <span class="courseTitle">Fine Applied Art(FAA101) Result</span>
                 <span class="examScore">examscore shows here</span>
                 <span class="semesterPoints">Semester total points shows here</span>
                 <span class="gradePoint">letter of grade grade point gotten is displayed here</span>

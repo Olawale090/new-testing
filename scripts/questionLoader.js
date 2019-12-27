@@ -4,7 +4,7 @@ var questions = [{
         "checks": ["<input type='radio' name='1' />", "<input type='radio' name='1' class='mio'/>", "<input type='radio' name='1'/>", "<input type='radio' name='1'/>", "<input type='radio' name='1'/>"]
     },
     {
-        "question": "If X ={2,4,5} and U = {x : x E U, 0 < x <or equal to 10 }. Find X<sup>c</sup>  &cap; U.",
+        "question": "If X ={2,4,5} and U = {x : x E U, 0 < x &lte; to 10 }. Find X<sup>c</sup>  &cap; U.",
         "options": ["X", "U", "X<sup>c</sup>", "U<sup>c</sup>"],
         "checks": ["<input type='radio' name='2' id='panS'/>", "<input type='radio' name='2'/>", "<input type='radio' class='mio' name='2'/>", "<input type='radio' name='2'/>", "<input type='radio' name='2'/>"]
     },
@@ -527,8 +527,8 @@ var questions = [{
 
 
 
-var mthP = JSON.stringify(questions);
-export var mthPQ = JSON.parse(mthP);
+var courseQ = JSON.stringify(questions);
+var coursePQ = JSON.parse(courseQ);
 const firstSemester = document.querySelector(".firstSemester");
 const sectionMth101 = document.querySelector("section.mth101");
 const retakeExamBtn = document.querySelector(".retakeExam");
@@ -549,20 +549,20 @@ export class exams {
         for (var i = 0; i < 50; i++) {
             let x = Math.floor(Math.random() * i);
             try {
-                console.log(mthPQ[i].questions);
-                console.log("A     " + mthPQ[i].options[0]);
-                console.log("B     " + mthPQ[i].options[1]);
-                console.log("C     " + mthPQ[i].options[2]);
-                console.log("D     " + mthPQ[i].options[3]);
+                console.log(coursePQ[i].questions);
+                console.log("A     " + coursePQ[i].options[0]);
+                console.log("B     " + coursePQ[i].options[1]);
+                console.log("C     " + coursePQ[i].options[2]);
+                console.log("D     " + coursePQ[i].options[3]);
                 // console.log("E     " + mthPQ[i].options[4]);
 
                 j++;
                 span.innerHTML += `<ul class="mthQuestions firstQ">
-                    <li> ${j}. ${mthPQ[x].question} </li>
-                    <label class="qLabel"> A </label><li> ${mthPQ[x].checks[0]} ${mthPQ[x].options[0]} </li>
-                    <label class="qLabel"> B </label><li> ${mthPQ[x].checks[1]} ${mthPQ[x].options[1]}</li>
-                    <label class="qLabel"> C </label><li> ${mthPQ[x].checks[2]} ${mthPQ[x].options[2]}</li>
-                    <label class="qLabel"> D </label><li> ${mthPQ[x].checks[3]} ${mthPQ[x].options[3]}</li>
+                    <li> ${j}. ${coursePQ[x].question} </li>
+                    <label class="qLabel"> A </label><li> ${coursePQ[x].checks[0]} ${coursePQ[x].options[0]} </li>
+                    <label class="qLabel"> B </label><li> ${coursePQ[x].checks[1]} ${coursePQ[x].options[1]}</li>
+                    <label class="qLabel"> C </label><li> ${coursePQ[x].checks[2]} ${coursePQ[x].options[2]}</li>
+                    <label class="qLabel"> D </label><li> ${coursePQ[x].checks[3]} ${coursePQ[x].options[3]}</li>
                     </ul>`;
 
             } catch (err) {
